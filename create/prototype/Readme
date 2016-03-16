@@ -1,0 +1,4 @@
+/* -g to get line in valgrind analysis */
+g++ -g prototype.cpp
+/* valgrind to analysis the memory usage or memory leak */
+valgrind --tool=memcheck --leak-check=yes ./a.out
